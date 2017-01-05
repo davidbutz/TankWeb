@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/TankTimer/node_modules
+/TankTimer/obj/Release
+*.dat
+*.njsproj
+/TankTimer/tanktimer.pubxml
+/TankTimer/tanktimer.pubxml.user
+/npm-debug.log
+/TankTimer.sln
+/TankTimer/bin
+/.vs/TankTimer/v14/.suo

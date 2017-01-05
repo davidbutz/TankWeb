@@ -92,7 +92,19 @@
         console.log(req.body);
         sendresponse(res, { success: true, message: 'temp received' });
     });
- 
+    
+    rRouter.post("/claimACK", function (req, res) {
+        var moduleID = req.body.data;
+        datalayer.confirmPairingRequest(req, res, moduleID, function (err, message) {
+            if (err) {
+                sendresponse(res, { success: false, message: 'Something Happened' });
+            }
+            else {
+                sendresponse(res, { success: true, message: 'Acknowledgement Received' });
+            }
+        });
+    });
+
     //generic send reponse.
     function sendresponse(res, response) {
         res.json(response);

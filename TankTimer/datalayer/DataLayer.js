@@ -6,21 +6,23 @@
     };
     var connection = initializeConnection(config().mysql);
     DataLayer.addPairingRequest = function (req, res, macAddress, deviceID, callback){
-        //connection.connect();
         connection.query('Call addPairingRequest(?,?)' , [macAddress, deviceID], function (err, rows, fields) {
             if (err) throw err;
             
             //console.log('The result is: ', rows[0][0].ModulePairID);
             callback(null,rows[0][0].ModulePairID);
         });
-        //connection.end();
     }
     
     DataLayer.confirmPairingRequest = function (req, res, moduleID, callback) {
-        //connection.connect();
         connection.query('Call confirmPairingRequest(?)' , [moduleID,], function (err, rows, fields) {
-            if (err) throw err;
-            callback(null, "success");
+            if (err) {
+                throw err;
+                callback(err, "failure");
+            }
+            else {
+                callback(null, "success");
+            }
         });
     }
 

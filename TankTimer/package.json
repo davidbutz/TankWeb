@@ -1,0 +1,22 @@
+{
+  "name": "TankTimer",
+  "version": "0.0.0",
+  "description": "TankTimer",
+  "main": "app.js",
+  "author": {
+    "name": "dbutz",
+    "email": ""
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.13.3",
+    "gcloud": "^0.37.0",
+    "jade": "*",
+    "mongoose": "^4.7.5",
+    "mysql": "^2.12.0",
+    "node-mysql": "^0.4.2",
+    "particle-api-js": "^6.4.1",
+    "stylus": "*",
+    "url": "^0.11.0"
+  }
+}

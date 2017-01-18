@@ -18,7 +18,7 @@ var express = require('express');
 var routes = require('./routes');
 var session = require('cookie-session');
 var config = require('./config');
-var logging = require('./lib/logging')();
+//var logging = require('./lib/logging')();
 
 var app = express();
 
@@ -30,7 +30,7 @@ app.set('trust proxy', true);
 
 // Add the request logger before anything else so that it can
 // accurately log requests.
-app.use(logging.requestLogger);
+//app.use(logging.requestLogger);
 
 
 // Configure the session and session storage.
@@ -46,14 +46,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', routes.index);
 app.get('/about', routes.about);
-app.get('/why', routes.why);
 app.get('/privacy', routes.privacy);
 app.get('/features', routes.features);
 app.get('/facebook', routes.facebook);
-app.get('/facebookdata', routes.facebookdata);
 app.get('/specs', routes.specs);
 app.get('/howitworks', routes.howitworks);
-app.get('/products', routes.products);
 app.get('/contact', routes.contact);
 app.get('/shopping', routes.shopping);
 app.use('/api', require('./routes/api')());
@@ -68,7 +65,7 @@ app.get('/_ah/health', function (req, res) {
 // Add the error logger after all middleware and routes so that
 // it can log errors from the whole application. Any custom error
 // handlers should go after this.
-app.use(logging.errorLogger);
+//app.use(logging.errorLogger);
 
 
 // Basic error handler

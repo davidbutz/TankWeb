@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "body-parser": "^1.15.2",
+    "cookie-session": "^1.2.0",
     "express": "^4.13.3",
     "gcloud": "^0.37.0",
     "jade": "*",
@@ -16,6 +17,7 @@
     "mysql": "^2.12.0",
     "node-mysql": "^0.4.2",
     "particle-api-js": "^6.4.1",
+    "routes": "^2.1.0",
     "stylus": "*",
     "url": "^0.11.0",
     "vash": "^0.12.2"

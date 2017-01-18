@@ -25,6 +25,28 @@
             }
         });
     }
+    
+    
+    DataLayer.handleSensorData = function (req, res, incomingData, callback) {
+        //parse out the message as a sensor reading.
+        //What's important to me is the ModuleID, the 
+        const buf = new Buffer(incomingData, 'hex');
+        //const buf = Buffer.from(incomingData);
+        var moduleID = buf.readUInt16LE(0);
+        console.log(moduleID);
+        var capabilityID = buf.readUInt16LE(2);
+        console.log(capabilityID);
+        var value = buf.readUInt32LE(4);
+        connection.query('Call handleSensorData(?,?,?)' , [moduleID,capabilityID,value], function (err, rows, fields) {
+            if (err) {
+                throw err;
+                callback(err, "failure");
+            }
+            else {
+                callback(null, "success");
+            }
+        });
+    }
 
     function initializeConnection(config) {
         function addDisconnectHandler(connection) {
@@ -35,7 +57,7 @@
                         console.log("Lost connection. Reconnecting...");
                         
                         initializeConnection(connection.config);
-                    } else if (error.fatal) {
+                    } else if (error.fatal) {2
                         throw error;
                     }
                 }

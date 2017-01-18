@@ -16,7 +16,7 @@
     rRouter.use(function (req, res, next) {
         // do logging that any /api call got made 
         if (debugging) {
-            console.log('Something is happening in /api/setlineup layer.');
+            console.log('Something is happening in /api/webhooks layer.');
         }
         next();
     });
@@ -63,7 +63,7 @@
         });
     });
     
-    //command
+    //command to turn on/off LED light.
     rRouter.get("/command/:deviceID/:variable", function (req, res) {
         var deviceIDstr = req.params.deviceID;
         console.log(deviceIDstr);
@@ -88,21 +88,45 @@
         sendresponse(res, { success: true, message: 'temp received' });
     });
     
+
     rRouter.post("/temp", function (req, res) {
         console.log(req.body);
         sendresponse(res, { success: true, message: 'temp received' });
     });
     
     rRouter.post("/claimACK", function (req, res) {
+        //make sure webhook in particle sends meta-data so that "data" is exposed. otherwise it's "field1" or whatever you call it.
         var moduleID = req.body.data;
-        datalayer.confirmPairingRequest(req, res, moduleID, function (err, message) {
-            if (err) {
-                sendresponse(res, { success: false, message: 'Something Happened' });
-            }
-            else {
-                sendresponse(res, { success: true, message: 'Acknowledgement Received' });
-            }
-        });
+        if (req.body.data == "test-event") {
+            sendresponse(res, { success: false, message: 'Something Happened' });
+        }
+        else {
+            datalayer.confirmPairingRequest(req, res, moduleID, function (err, message) {
+                if (err) {
+                    sendresponse(res, { success: false, message: 'Something Happened' });
+                }
+                else {
+                    sendresponse(res, { success: true, message: 'Acknowledgement Received' });
+                }
+            });
+        }
+    });
+    
+    rRouter.post("/handleData", function (req, res) {
+        var incomingData = req.body.data;
+        if (req.body.data == "test-event") {
+            sendresponse(res, { success: false, message: 'Something Happened' });
+        }
+        else {
+            datalayer.handleSensorData(req, res, incomingData, function (err, message) {
+                if (err) {
+                    sendresponse(res, { success: false, message: 'Something Happened' });
+                }
+                else {
+                    sendresponse(res, { success: true, message: 'Acknowledgement Received' });
+                }
+            });
+        }
     });
 
     //generic send reponse.

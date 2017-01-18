@@ -1,10 +1,10 @@
 ﻿var req = "";
 var res = "";
 
-//var gcloud = require('gcloud')({
-//    projectId: 'boataware2',
-//    keyFilename: './config/BoatAware2-dcbca66e922c.json'
-//});
+var gcloud = require('gcloud')({
+    projectId: 'boataware2',
+    keyFilename: './config/BoatAware2-dcbca66e922c.json'
+});
 
 var config = require('./config/index.js');
 

@@ -61,7 +61,7 @@
 .price-text-color
 {
     color: #219FD1;
-    /*color: #FF9900;*/
+    /*color: #AE0000;*/
 }
 
 .col-item .info .rating
@@ -295,7 +295,7 @@ a {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   text-decoration: none;
-  color: #004282; }  
+  color: #fc2f2f; }  
   a:hover, a:focus {
     text-decoration: none;
     outline: 0 !important; }
@@ -397,7 +397,7 @@ hr.separator {
   min-height: 60px;
   box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1);
   border: 0px;
-  background-color: #004282; 
+  background-color: #fc2f2f; 
 }
   .navbar-inverse .navbar-brand {
     float: left;
@@ -421,7 +421,7 @@ hr.separator {
   font-weight: 400; }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
-  color: #ff9900;
+  color: #AE0000;
   background-color: transparent; }
 
 @media (min-width: 768px) {
@@ -431,7 +431,7 @@ hr.separator {
 /**footer**/
 .footer {
   padding: 60px 0;
-  background-color: #004282; }
+  background-color: #fc2f2f; }
   .footer h2 {
     font-family: "Poppins", sans-serif;
     color: #fff; }
@@ -452,7 +452,7 @@ hr.separator {
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         border-radius: 50%;
-        background-color: #ff9900;
+        background-color: #AE0000;
         color: #ffffff; }
         .footer p a{
           color: #aeaeae;
@@ -901,7 +901,7 @@ hr.separator {
 
 /**announcement**/
 .announcement {
-  background-color:#004282; /*orange*/
+  background-color:#fc2f2f; /*orange*/
   color:#fff;
   padding-top:1rem;
   padding-bottom:1rem;
@@ -919,7 +919,7 @@ hr.separator {
 .announcement .btn-reserve {
     width: 68%;
     padding: 1rem 3%;
-    background-color: #ff9900;
+    background-color: #AE0000;
     border-color: #9B5D00;
     border: 1px solid #9B5D00;
     color:#000;
@@ -989,7 +989,7 @@ hr.separator {
     text-align: right;
     padding-right: 10px; }
     .feature-right .text h3 {
-      color: #004282;
+      color: #fc2f2f;
       font-weight: 600;
       font-size: 20px;
       text-transform: capitalize; }
@@ -1000,7 +1000,7 @@ hr.separator {
     height: 60px;
     line-height: 60px;
     text-align: center;
-    border: 1px solid #004282;
+    border: 1px solid #fc2f2f;
     -webkit-box-shadow: 0 0 0 2px #fff;
     -moz-box-shadow: 0 0 0 2px #fff;
     -ms-box-shadow: 0 0 0 2px #fff;
@@ -1015,14 +1015,14 @@ hr.separator {
     transition: all ease-in 0.25s; }
     .feature-right .icon i {
       font-size: 20px;
-      color: #004282; }
+      color: #fc2f2f; }
 /*  .feature-right:hover .icon {
     border: 2px solid #fff;
-    -webkit-box-shadow: 0 0 0 2px #004282;
-    -moz-box-shadow: 0 0 0 2px #004282;
-    -ms-box-shadow: 0 0 0 2px #004282;
-    box-shadow: 0 0 0 2px #004282;
-    background-color: #004282; }
+    -webkit-box-shadow: 0 0 0 2px #fc2f2f;
+    -moz-box-shadow: 0 0 0 2px #fc2f2f;
+    -ms-box-shadow: 0 0 0 2px #fc2f2f;
+    box-shadow: 0 0 0 2px #fc2f2f;
+    background-color: #fc2f2f; }
     .feature-right:hover .icon i {
       color: #fff; }*/
 
@@ -1033,7 +1033,7 @@ hr.separator {
     text-align: left;
     padding-left: 10px; }
     .feature-left .text h3 {
-      color: #004282;
+      color: #fc2f2f;
       font-weight: 600;
       font-size: 20px;
       text-transform: capitalize; }
@@ -1044,7 +1044,7 @@ hr.separator {
     height: 60px;
     line-height: 60px;
     text-align: center;
-    border: 1px solid #004282;
+    border: 1px solid #fc2f2f;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -1059,14 +1059,14 @@ hr.separator {
     transition: all ease-in 0.25s; }
     .feature-left .icon i {
       font-size: 20px;
-      color: #004282; }
+      color: #fc2f2f; }
 /*  .feature-left:hover .icon {
     border: 2px solid #fff;
-    -webkit-box-shadow: 0 0 0 2px #004282;
-    -moz-box-shadow: 0 0 0 2px #004282;
-    -ms-box-shadow: 0 0 0 2px #004282;
-    box-shadow: 0 0 0 2px #004282;
-    background-color: #004282; }
+    -webkit-box-shadow: 0 0 0 2px #fc2f2f;
+    -moz-box-shadow: 0 0 0 2px #fc2f2f;
+    -ms-box-shadow: 0 0 0 2px #fc2f2f;
+    box-shadow: 0 0 0 2px #fc2f2f;
+    background-color: #fc2f2f; }
     .feature-left:hover .icon i {
       color: #fff; }*/
 

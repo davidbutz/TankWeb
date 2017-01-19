@@ -15,20 +15,19 @@
         <section class="features" id="howitworks">
             <div class="container">
                 <div class="section_heading">
-                    <h3>The REMO - Boat Aware Remote Monitor</h3>
+                    <h3>Tank Timer</h3>
                     <hr class="separator" />
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
                         <p>
-                            The Boat Aware REMO is a plug-and-play boat monitoring device.
-                            Plug the REMO into a DC power source and use your smartphone to immediately access your vessel's vital signs. Then add on additional modules as needed.
+                            Something about tank timer
                         </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <img src="images/howitworks.gif" class="img-responsive" alt="REMO Diagram" />
+                        <img src="images/howitworks.gif" class="img-responsive" alt="Tank Timer Diagram" />
                     </div>
                 </div>
                 <div class="section_heading">
@@ -38,16 +37,14 @@
                 <div class="row">
                     <div class="col-sm-8">
                         <p>
-                            Installation of your REMO is as easy as plugging it in to 12V DC (or an AC adapter).
-                            Once the REMO has powered up, the Boat Aware app will guide you through
-                            the setup process.
+                            Installilng Tank Timer
                         </p>
                         <ol>
-                            <li>Plug in your REMO to your boat's battery through a 12V DC connector or 120V AC adapter
-                                <p>The device will establish a 3G cellular connection and begin streaming it's sensor information to Boat Aware.</p>
+                            <li>STEP 1
+                                <p>Aha! Its simple.</p>
                             </li>
-                            <li>Download and launch the Boat Aware app from the Apple or Google Play stores
-                                <p>Login and see your boat's location, battery voltage, and other sensor data.</p>
+                            <li>Download and launch the Tank Timer app from the Apple or Google Play stores
+                                <p>Get gas, don't blow.</p>
                             </li>
                             
                         </ol>
@@ -59,19 +56,16 @@
                 </div>
 
                 <div class="section_heading">
-                    <h3>The Boat Aware App</h3>
+                    <h3>The Tank Timer App</h3>
                     <hr class="separator" />
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
                         <p>
-                            The Boat Aware app allows you to quickly and securely check on the conditions in your boat.
-                            Instantly view your boat's position and current battery voltage.
-                            Expand the system with our add-on modules to monitor your bilge, freezer, and more! 
+                            Tank Timer lets you...
                         </p>
                         <p>
-                            Configure the app to send you alerts when any of the REMO's sensors reach an uncomfortable level.
-                            View sensor history over time to identify concerning trends.
+                            Configure steak cooking time
                         </p>
                     </div>
                 </div>

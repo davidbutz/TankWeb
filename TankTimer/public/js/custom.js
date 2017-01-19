@@ -10,7 +10,7 @@ $(document).ready(function () {
     });
 
     if (matchMedia('(min-width: 992px), (max-width: 767px)').matches) {
-        function mainNav() {
+        function mainNav2() {
             var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
             if (top > 40)
                 $('.sticky-navigation').stop().animate({"top": '0'});
@@ -21,7 +21,7 @@ $(document).ready(function () {
     }
 
     if (matchMedia('(min-width: 768px) and (max-width: 991px)').matches) {
-        function mainNav() {
+        function mainNav2() {
             var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
             if (top > 40)
                 $('.sticky-navigation').stop().animate({"top": '0'});
